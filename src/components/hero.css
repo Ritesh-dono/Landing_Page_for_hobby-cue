@@ -1,0 +1,78 @@
+.hero-section {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .imgsec {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .imgsec img {
+    width: 50%;
+    height: auto;
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+  .text-center{
+    margin-bottom: 150px;
+  }
+  @media (max-width: 768px) {
+    .imgsec {
+      position: relative;
+    }
+  
+    .imgsec img {
+      width: 100%;
+    }
+  }
+
+
+  .nav-buttons {
+    display: flex;
+    gap: 40px;
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    margin-bottom: 23px;
+
+}
+
+.nav-button {
+    position: relative;
+    color: #8a6fa7;
+    cursor: pointer;
+    
+}
+
+.nav-button.sign-in {
+    color: #8a6fa7; 
+   
+}
+
+.nav-button.join-in {
+    color: #9ea1a4; 
+}
+
+.nav-button.sign-in::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 2px;
+    background-color: #8a6fa7;
+    transform: scaleX(1);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+
+
+.nav-button:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}

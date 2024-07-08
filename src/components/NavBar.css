@@ -1,0 +1,45 @@
+
+.btn1, .btn2, .btn3 {
+    position: relative; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(128, 100, 162);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.btn1::after, .btn2::after, .btn3::after {
+    content: attr(data-tooltip); 
+    position: absolute; 
+    bottom: -50%; 
+    left: 50%;
+    transform: translateX(-50%);
+    background-color:rgb(128, 100, 162);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    pointer-events: none;
+    z-index: 1000; 
+}
+
+.btn1:hover::after, .btn2:hover::after, .btn3:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+@media (max-width: 768px) {
+    .btn1, .btn2, .btn3 {
+        padding: 8px 16px; 
+    }
+
+    .btn1::after, .btn2::after, .btn3::after {
+        padding: 4px 8px;
+        font-size: 0.875rem; 
+    }
+}

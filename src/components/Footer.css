@@ -1,0 +1,190 @@
+/* Footer.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+  }
+  
+  body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .main-content {
+    flex: 1; /* This ensures main content takes up remaining space */
+  }
+  
+  .footer {
+    padding: 40px 0;
+    text-align: left;
+    background-color: hsla(0, 0%, 100%, 0.959);
+  }
+  
+  .footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 20px;
+  }
+  
+  .footer-section h4 {
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+    cursor: pointer; /* Add pointer cursor */
+  }
+  .footer-section h4:hover {
+    color: #8064A2; 
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .footer-section ul.open {
+    max-height: 200px; /* Adjust based on content size */
+  }
+  
+  .footer-section ul li {
+    transition: color 0.3s ease;
+    margin-bottom: 10px;
+  }
+  .footer-section ul li:hover {
+    color: #0096C8;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .social-media a {
+    transition: color 0.3s ease;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  .social-media a:hover {
+    color: #0096C8; /* Example color change on hover */
+  }
+  
+  .invite-friends {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+  
+  .invite-friends input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .invite-friends button {
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #8064A2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .invite-friends button:hover {
+    background-color: #0096C8; /* Example background color change on hover */
+  }
+  
+  .footer-bottom {
+    background-color: #8064A2;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  .footer-bottom:hover {
+    background-color: #0096C8; /* Example background color change on hover */
+  }
+  
+  .f1 {
+    width: 100%;
+    height: 667px;
+    background: #F7FDFF;
+  }
+  
+  .hoby  {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 130px;
+    width: 100%; /* Ensure full width */
+    max-width: 565px; /* Ensure max width */
+    margin-left: 55px;
+    margin-right: auto; /* Center align */
+    gap: 2px;
+    border-radius: 8px 0 0 0;
+    opacity: 1; /* Ensure visible */
+  }
+  
+  .imgl {
+    position: relative;
+    display: flex;
+    margin-top: 55px;
+    width: 50%;
+  }
+  
+  .scroll-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    border: 1px solid rgb(213, 213, 213);
+    background-color: #ffffff;
+    color: rgb(112, 107, 107);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer-section {
+        width: 100%;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+  
+    .invite-friends {
+        width: 100%;
+        align-items: stretch;
+    }
+  
+    .footer-section ul {
+        max-height: 0; /* Initially hidden */
+        overflow: hidden;
+    }
+  }
+  
