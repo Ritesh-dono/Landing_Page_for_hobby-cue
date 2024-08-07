@@ -1,8 +1,13 @@
-# React + Vite
+This is just a landing page with pure React.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+#Getting Started
+To get started with Hobby Task:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visit the website: https://hobbytask.netlify.app/
+Sign up for an account or log in if you already have one.
+Start exploring and tracking your hobbies!
+
+
+#Technologies Used
+Frontend: React, Tailwind CSS
